@@ -31,6 +31,8 @@ func main() {
 
 	fmt.Println("Novi ispis za testiranje commita!")
 
+	fmt.Println("Noviji ispis za testiranje triggera!")
+
 }
 
 func add(a int, b int) int {
