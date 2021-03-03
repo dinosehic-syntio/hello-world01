@@ -20,22 +20,20 @@ func main() {
 		fmt.Println(i, string(c))
 	}
 
-	/*fmt.Println("Upisite prvi broj")
+	fmt.Println("Upisite prvi broj")
 	var x int
 	fmt.Scanf("%d", &x)
 	fmt.Println("Upisite drugi broj")
 	var y int
 	fmt.Scanf("%d", &y)
 
+	fmt.Println("Funkcija zbrajanja za ", x, " i ", y, ": ", add(x, y))
 
-	fmt.Println("Funkcija zbrajanja za ", x, " i ", y, ": ", add(x,y))
-
-	fmt.Println("Novi ispis za testiranje commita!")*/
+	fmt.Println("Novi ispis za testiranje commita!")
 
 }
 
-/*func add(a int, b int) int{
+func add(a int, b int) int {
 	sum := a + b
 	return sum
 }
-*/
