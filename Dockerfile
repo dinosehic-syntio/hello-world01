@@ -15,4 +15,4 @@
 FROM alpine
 COPY quickstart-docker/quickstart.sh /
 RUN chmod +x quickstart.sh
-ENTRYPOINT ["quickstart.sh"]
+CMD ["quickstart.sh"]
