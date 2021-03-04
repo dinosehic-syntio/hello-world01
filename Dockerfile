@@ -13,6 +13,6 @@
 # limitations under the License.
 
 FROM alpine
-COPY quickstart-docker/quickstart.sh /
+COPY -v quickstart-docker/quickstart.sh /
 RUN chmod +x quickstart.sh
 CMD ["quickstart.sh"]
