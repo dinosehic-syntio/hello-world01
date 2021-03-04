@@ -19,6 +19,9 @@ func main() {
 	for i, c := range n {
 		fmt.Println(i, string(c))
 	}
+	for i := 0; i < len(n); i++{
+		fmt.Println(string(n[i]))
+	}
 
 	fmt.Println("Upisite prvi broj")
 	var x int
