@@ -29,7 +29,7 @@ func main() {
 
 	fmt.Println("Funkcija zbrajanja za ", x, " i ", y, ": ", add(x, y))
 
-	fmt.Println("Testing output!")
+	fmt.Println("Testing output!!!!")
 
 }
 
