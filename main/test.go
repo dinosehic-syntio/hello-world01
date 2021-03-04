@@ -29,9 +29,7 @@ func main() {
 
 	fmt.Println("Funkcija zbrajanja za ", x, " i ", y, ": ", add(x, y))
 
-	fmt.Println("Novi ispis za testiranje commita!")
-
-	fmt.Println("Noviji ispis za testiranje triggera!")
+	fmt.Println("Testing output!")
 
 }
 
