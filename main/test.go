@@ -19,7 +19,7 @@ func main() {
 	for i, c := range n {
 		fmt.Println(i, string(c))
 	}
-	for i := 0; i < len(n); i++{
+	for i := 0; i < len(n); i++ {
 		fmt.Println(string(n[i]))
 	}
 
@@ -34,10 +34,14 @@ func main() {
 
 	fmt.Println("Testing output!!!!")
 
-
 }
 
 func add(a int, b int) int {
 	sum := a + b
 	return sum
+}
+
+func sub(a int, b int) int {
+	sub := a - b
+	return sub
 }
