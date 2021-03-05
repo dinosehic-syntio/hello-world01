@@ -15,5 +15,6 @@
 FROM alpine
 COPY quickstart-docker/quickstart.sh /
 RUN chmod +x quickstart.sh
+RUN golangci-lint --version
 RUN golangci-lint run
 CMD ["/quickstart.sh"]
