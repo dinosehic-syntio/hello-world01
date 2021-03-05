@@ -3,3 +3,4 @@ steps:
    args: ['build', '-t', 'gcr.io/syntio-aquarium/hello-world01@sha256:a356611e9ea7265cf905a760986bd60d4b5bd8289405c6975d8e53515f873102', '.']
  - name: 'gcr.io/cloud-builders/docker'
    args: ['push', 'gcr.io/syntio-aquarium/hello-world01@sha256:a356611e9ea7265cf905a760986bd60d4b5bd8289405c6975d8e53515f873102']
+ images: ['gcr.io/syntio-aquarium/hello-world01@sha256:a356611e9ea7265cf905a760986bd60d4b5bd8289405c6975d8e53515f873102']
