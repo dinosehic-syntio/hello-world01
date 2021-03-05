@@ -1,5 +1,6 @@
 steps:
  - name: 'gcr.io/cloud-builders/docker'
-   args: ['build', '-t', 'gcr.io/syntio-aquarium/hello-world01@sha256:a356611e9ea7265cf905a760986bd60d4b5bd8289405c6975d8e53515f873102', '.']
+   args: ['build', '-t', 'gcr.io/syntio-aquarium/github.com/dinosehic/hello-world01@sha256:bd9a8e3038d804dedf1fc8e94dc58b81dc81c6dad7256c2d7e59934d3e68ec69', '.']
  - name: 'gcr.io/cloud-builders/docker'
-   args: ['push', 'gcr.io/syntio-aquarium/hello-world01@sha256:a356611e9ea7265cf905a760986bd60d4b5bd8289405c6975d8e53515f873102', '.']
+   args: ['push', 'gcr.io/syntio-aquarium/github.com/dinosehic/hello-world01@sha256:bd9a8e3038d804dedf1fc8e94dc58b81dc81c6dad7256c2d7e59934d3e68ec69', '.']
+  
