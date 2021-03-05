@@ -34,6 +34,8 @@ func main() {
 
 	fmt.Println("Testing output!!!!")
 
+	fmt.Println("novi output za testiranje!")
+
 }
 
 func add(a int, b int) int {
