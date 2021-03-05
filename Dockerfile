@@ -15,7 +15,7 @@
 FROM alpine
 COPY quickstart-docker/quickstart.sh /
 RUN chmod +x quickstart.sh
-RUN docker run --rm -v $(pwd):/app -w /app golangci/golangci-lint:v1.37.1 golangci-lint run -v
+RUN curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s -- -b $(go env GOPATH)/bin v1.37.1
 RUN golangci-lint --version
 RUN golangci-lint run
 CMD ["/quickstart.sh"]
