@@ -15,7 +15,5 @@
 FROM alpine
 COPY quickstart-docker/quickstart.sh /
 RUN chmod +x quickstart.sh
-RUN curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s -- -b $(go env GOPATH)/bin v1.37.1
-RUN golangci-lint --version
-RUN golangci-lint run
+RUN echo "Hello, world! The time is $(date)."
 CMD ["/quickstart.sh"]
