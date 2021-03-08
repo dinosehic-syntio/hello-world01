@@ -40,8 +40,3 @@ func add(a int, b int) int {
 	sum := a + b
 	return sum
 }
-
-func sub(a int, b int) int {
-	sub := a - b
-	return sub
-}
