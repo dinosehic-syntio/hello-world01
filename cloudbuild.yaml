@@ -1,3 +1,3 @@
 steps:
  - name: 'gcr.io/cloud-builders/docker'
-   args: ['build', '-t', 'gcr.io/syntio-aquarium/github.com/dinosehic/hello-world01@sha256:bd9a8e3038d804dedf1fc8e94dc58b81dc81c6dad7256c2d7e59934d3e68ec69', '.']
+   args: ['build', '-t', 'gcr.io/syntio-aquarium/github.com/dinosehic/hello-world01', '.']
