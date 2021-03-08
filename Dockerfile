@@ -13,7 +13,7 @@
 # limitations under the License.
 
 FROM alpine
-COPY quickstart-docker/quickstart.sh /
+COPY ./quickstart.sh /
 RUN chmod +x quickstart.sh
 RUN echo "Hello, world!!! The time is $(date)."
 CMD ["/quickstart.sh"]
