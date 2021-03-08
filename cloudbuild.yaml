@@ -1,3 +1,6 @@
 steps:
  - name: 'gcr.io/cloud-builders/docker'
-   args: ['build', '-t', 'gcr.io/syntio-aquarium/github.com/dinosehic/hello-world01:$COMMIT_SHA', '.']
+   args: ['build', '-t', 'gcr.io/syntio-aquarium/github.com/dinosehic/hello-world01$COMMIT_SHA', '.']
+
+
+   
