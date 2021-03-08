@@ -1,4 +1,8 @@
 steps:
- - name: 'gcr.io/cloud-builders/docker'
-   args: ['build', '-t', 'gcr.io/syntio-aquarium/github.com/dinosehic/hello-world01', '.']
-images: ['gcr.io/syntio-aquarium/github.com/dinosehic/hello-world01']
+  - id: go_linter
+    name: "golangci/golangci-lint"
+    args: ["golangci-lint", "run"]
+  - id: docker
+    name: 'gcr.io/cloud-builders/docker'
+    args: ['build', '-t', 'gcr.io/syntio-aquarium/github.com/dinosehic/hello-world01', '.']
+    images: ['gcr.io/syntio-aquarium/github.com/dinosehic/hello-world01']

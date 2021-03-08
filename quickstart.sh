@@ -14,4 +14,3 @@
 # limitations under the License.
 
 echo "Hello, world! The time is $(date)."
-golangci-lint run
