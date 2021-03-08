@@ -5,7 +5,7 @@ steps:
   - id: go_sec
     name: "securego/gosec"
     args: ["helloworld"]
-    env: ["GOPATH=."]
+    env: ["GOPATH=./main"]
   - id: docker
     name: 'gcr.io/cloud-builders/docker'
     args: ['build', '-t', 'gcr.io/syntio-aquarium/github.com/dinosehic/hello-world01', '.']
