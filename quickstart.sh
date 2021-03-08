@@ -14,4 +14,8 @@
 # limitations under the License.
 
 echo "Hello, world! The time is $(date)."
-echo "mjau!"
+brew install bash-completion@2
+echo 'export BASH_COMPLETION_COMPAT_DIR="/usr/local/etc/bash_completion.d"' >>~/.bashrc
+echo '[[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"' >>~/.bashrc
+exec bash # reload and replace (if it was updated) shell
+type _init_completion && echo "completion is OK" # verify that bash-completion v2 is correctly installed
