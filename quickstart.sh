@@ -14,4 +14,5 @@
 # limitations under the License.
 
 echo "Hello, world! The time is $(date)."
+docker run --rm -v $(pwd):/app -w /app golangci/golangci-lint:v1.37.1 golangci-lint run -v
 golangci-lint run
