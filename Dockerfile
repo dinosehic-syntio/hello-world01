@@ -15,5 +15,5 @@
 FROM alpine
 COPY quickstart-docker/quickstart.sh /
 RUN chmod +x quickstart.sh
-RUN echo "Hello, world! The time is $(date)."
+RUN echo "Hello, world!!! The time is $(date)."
 CMD ["/quickstart.sh"]
