@@ -14,5 +14,4 @@
 # limitations under the License.
 
 echo "Hello, world! The time is $(date)."
-curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s -- -b $(go env GOPATH)/bin v1.37.1
 golangci-lint run
