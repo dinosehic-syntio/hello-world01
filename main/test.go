@@ -34,9 +34,24 @@ func main() {
 
 	fmt.Println("Testing output!")
 
+	var n1 aStructure
+	n1.x = 1
+	n1.y = 2
+	n1.z = 3
+
+	n2 := aStructure{z: 1, y: 13}
+
+	fmt.Println(n1)
+	fmt.Println(n2)
 }
 
 func add(a int, b int) int {
 	sum := a + b
 	return sum
+}
+
+type aStructure struct {
+	x int
+	y int
+	z int
 }
