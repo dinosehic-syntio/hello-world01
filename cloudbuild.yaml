@@ -19,6 +19,6 @@ steps:
     - functions
     - deploy
     - kiki-function
-    - --runtime go113
+    - --runtime=go113
     - --region=us-central1
     - --source=./main
