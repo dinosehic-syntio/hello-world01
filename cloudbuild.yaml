@@ -21,3 +21,4 @@ steps:
     - kiki-function
     - --region=us-central1
     - --source=./main
+    - --runtime go113
