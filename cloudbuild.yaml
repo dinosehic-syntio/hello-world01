@@ -1,11 +1,11 @@
 steps:
   - id: deployment
-  name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
-  args:
-    - gcloud
-    - functions
-    - deploy
-    - kiki-function
-    - --runtime=go113
-    - --region=us-central1
-    - --source=./main
+    name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+    args:
+      - gcloud
+      - functions
+      - deploy
+      - kiki-function
+      - --runtime=go113
+      - --region=us-central1
+      - --source=./main
