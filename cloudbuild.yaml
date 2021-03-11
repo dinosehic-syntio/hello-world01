@@ -1,20 +1,7 @@
 steps:
-#  - id: eclint
-#    name: "e53e225/editorconfig-checker"
-#  - id: go_linter
-#    name: "golangci/golangci-lint"
-#    args: ["golangci-lint", "run"]
-#  - id: go_sec
-#    name: "securego/gosec"
-#    args: ["helloworld"]
-#    env: ["GOPATH=./main"]
-#  - id: docker
-#    name: 'gcr.io/cloud-builders/docker'
-#    args: ['build', '-t', 'gcr.io/syntio-aquarium/github.com/dinosehic/hello-world01', '.']
-#images: ['gcr.io/syntio-aquarium/github.com/dinosehic/hello-world01']
   - id: deployment
-    name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
-    args:
+  name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+  args:
     - gcloud
     - functions
     - deploy
