@@ -34,7 +34,6 @@ func main() {
 
 	fmt.Println("Testing output!")
 	fmt.Println("Dino je kul!")
-	
 
 	var n1 aStructure
 	n1.x = 1
