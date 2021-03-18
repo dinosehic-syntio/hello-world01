@@ -21,6 +21,6 @@ jobs:
       with:
         serverUrl: http://157.90.155.174:8081/
         username: admin
-        password: ${{ 86c79dd1-9a5f-4723-ad45-0a6e6fa3c88c }}
+        password: "86c79dd1-9a5f-4723-ad45-0a6e6fa3c88c"
         format: docker
         repository: docker-private
