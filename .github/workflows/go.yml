@@ -24,3 +24,6 @@ jobs:
         password: "86c79dd1-9a5f-4723-ad45-0a6e6fa3c88c"
         format: docker
         repository: docker-private
+        coordinates: groupId = main
+        assets: extension=
+        filename: ./main/test.go
