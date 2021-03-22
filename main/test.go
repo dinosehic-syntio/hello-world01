@@ -51,6 +51,12 @@ func add(a int, b int) int {
 	return sum
 }
 
+
+func sub(a int, b int) int {
+	sub := a - b
+	return sub
+}
+
 type aStructure struct {
 	x int
 	y int
