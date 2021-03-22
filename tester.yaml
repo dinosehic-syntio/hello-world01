@@ -1,11 +1,14 @@
 steps:
   - id: eclint
     name: "e53e225/editorconfig-checker"
+    waitFor: ['-']
   - id: go_linter
     name: "golangci/golangci-lint"
+    waitFor: ['-']
     args: ["golangci-lint", "run"]
   - id: go_sec
     name: "securego/gosec"
+    waitFor: ['-']
     args: ["helloworld"]
     env: ["GOPATH=./main"]
 
