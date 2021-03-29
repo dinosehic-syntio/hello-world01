@@ -5,7 +5,7 @@ import (
 )
 
 func main() {
-	fmt.Println("Hello world!")
+ fmt.Println("Hello world!")
 	fmt.Print("Hello ")
 	fmt.Print("world!\n")
 	for i := 0; i < 5; i++ {
