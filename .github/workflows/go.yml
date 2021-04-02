@@ -15,15 +15,8 @@ jobs:
       uses: actions/setup-go@v2
       with:
         go-version: 1.16
-        
-    - name: Nexus Repo Publish
-      uses: sonatype-nexus-community/nexus-repo-github-action@master
+
+    - name: golangci-lint
+      uses: golangci/golangci-lint-action@v2
       with:
-        serverUrl: http://157.90.155.174:8081/
-        username: admin
-        password: "86c79dd1-9a5f-4723-ad45-0a6e6fa3c88c"
-        format: docker
-        repository: docker-private
-        coordinates: groupId = main
-        assets: extension=
-        filename: ./main/test.go
+          timeout: 10m0s
