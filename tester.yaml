@@ -13,9 +13,9 @@ steps:
     
   - id: go_linter
     name: "golangci/golangci-lint"
-    waitFor: ['-']
-   #   - security-tests
-    args: ["golangci-lint", "run", "--timeout=10m0s", "--no-fail"]
+    waitFor:
+      - security-tests
+    args: ["golangci-lint", "run", "--timeout=10m0s"]
    
   #- id: go_sec
   #  name: "securego/gosec"
