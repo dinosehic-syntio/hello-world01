@@ -5,10 +5,10 @@ steps:
   - id: go_linter
     name: "golangci/golangci-lint"
     waitFor:
-      - 'security-tests'
+      - security-tests
     args: ["golangci-lint", "run", "--timeout=10m0s", "--no-fail"]
   # Run security tests
-  - id: 'security-tests'
+  - id: security-tests
     name: securego/gosec
     waitFor: ['-']
     env:
