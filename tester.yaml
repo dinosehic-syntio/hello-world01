@@ -14,8 +14,7 @@ steps:
     env:
     - 'GO116MODULE=on'
     args:
-    - no-fail
-    - ./..
+    - no-fail ./..
    
   #- id: go_sec
   #  name: "securego/gosec"
